@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YNS COD Ranked Tracker</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+
+    <script src="index.js" defer></script>
+
+    <link rel="stylesheet" href="styles.css">
+        
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Squad Progression</h2>
+
+        <div id="leaderboard" class="leaderboard-grid"></div>
+
+        <div class="chart-container">
+            <canvas id="rankChart"></canvas>
+        </div>
+
+        <div class="table-wrapper">
+            <table id="statsTable">
+                <thead>
+                    <tr id="tableHead"></tr>
+                </thead>
+                <tbody id="tableBody"></tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+
+</html>
