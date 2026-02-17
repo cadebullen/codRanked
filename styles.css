@@ -75,6 +75,14 @@ h2 {
     border-radius: 8px;
     border-top: 4px solid #4caf50; 
     box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.player-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    background-color: #252525;
 }
 
 .player-name { font-weight: bold; font-size: 1.1em; margin-bottom: 5px; color: #fff; }
