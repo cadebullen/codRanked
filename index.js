@@ -129,6 +129,9 @@ function renderLeaderboard(stats) {
     const card = document.createElement("div");
     card.className = "player-card";
     card.style.borderTopColor = player.color;
+    card.onclick = () => {
+      window.location.href = `player.html?name=${encodeURIComponent(player.name)}`;
+    };
 
     card.innerHTML = `
             <div class="player-name">${player.name}</div>
